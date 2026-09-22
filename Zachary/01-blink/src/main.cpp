@@ -5,7 +5,19 @@ void krotkiBlysk() {
     delay(200);
 
     digitalWrite(LED_BUILTIN, LOW);
+    delay(200);}
+
+void dlogiBlysk() {
+    digitalWrite(LED_BUILTIN, HIGH);
+    delay(1000);
+
+    digitalWrite(LED_BUILTIN, LOW);
     delay(200);
+}
+
+void czekaj() {
+    digitalWrite(LED_BUILTIN, LOW);
+    delay(3000);
 }
 void setup() {
     pinMode(LED_BUILTIN, OUTPUT);
@@ -14,50 +26,20 @@ void setup() {
 void loop() {
    krotkiBlysk();
 
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(200);
+   krotkiBlysk();
 
-    digitalWrite(LED_BUILTIN, LOW);
-    delay(200);
+    krotkiBlysk();
 
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(200);
+    dlogiBlysk();
 
-    digitalWrite(LED_BUILTIN, LOW);
-    delay(200);
+    dlogiBlysk();
 
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(1000);
+    dlogiBlysk();
 
-    digitalWrite(LED_BUILTIN, LOW);
-    delay(1000);
+    krotkiBlysk();
 
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(1000);
+    krotkiBlysk();
 
-    digitalWrite(LED_BUILTIN, LOW);
-    delay(1000);
-
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(1000);
-
-    digitalWrite(LED_BUILTIN, LOW);
-    delay(1000);
- 
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(200);
-
-    digitalWrite(LED_BUILTIN, LOW);
-    delay(200);
-
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(200);
-
-    digitalWrite(LED_BUILTIN, LOW);
-    delay(200);
-
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(200);
-
-    digitalWrite(LED_BUILTIN, LOW);
-    delay(3000);}
+    krotkiBlysk();
+   
+    czekaj();}
