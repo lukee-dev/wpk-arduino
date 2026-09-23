@@ -24,22 +24,17 @@ void setup() {
 }
 
 void loop() {
+
+    for (int numer = 0; numer < 3; numer++) {
    krotkiBlysk();
+}
 
-   krotkiBlysk();
+for (int numer = 0; numer < 3; numer++) {
+dlogiBlysk();
+}
 
-    krotkiBlysk();
-
-    dlogiBlysk();
-
-    dlogiBlysk();
-
-    dlogiBlysk();
-
-    krotkiBlysk();
-
-    krotkiBlysk();
-
-    krotkiBlysk();
+   for (int numer = 0; numer < 3; numer++) {
+  krotkiBlysk();
+}
    
     czekaj();}
