@@ -1,19 +1,14 @@
 #include <Arduino.h>
 
-void krotkiBlysk() {
+void Blysk(int czas) {
     digitalWrite(LED_BUILTIN, HIGH);
-    delay(200);
+    delay(czas);
 
     digitalWrite(LED_BUILTIN, LOW);
     delay(200);}
 
-void dlogiBlysk() {
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(1000);
 
-    digitalWrite(LED_BUILTIN, LOW);
-    delay(200);
-}
+
 
 void czekaj() {
     digitalWrite(LED_BUILTIN, LOW);
@@ -26,15 +21,15 @@ void setup() {
 void loop() {
 
     for (int numer = 0; numer < 3; numer++) {
-   krotkiBlysk();
+   Blysk(200);
 }
 
-for (int numer = 0; numer < 3; numer++) {
-dlogiBlysk();
+    for (int numer = 0; numer < 3; numer++) {
+   Blysk(1000);
 }
 
    for (int numer = 0; numer < 3; numer++) {
-  krotkiBlysk();
+  Blysk(200);
 }
    
     czekaj();}
