@@ -16,9 +16,15 @@ void czekaj() {
 }
 void setup() {
     pinMode(LED_BUILTIN, OUTPUT);
+    pinMode(2, INPUT);
+
+
 }
 
 void loop() {
+
+    int Klik = digitalRead(2);
+
 
     for (int numer = 0; numer < 3; numer++) {
    Blysk(200);
