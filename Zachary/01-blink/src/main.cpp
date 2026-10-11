@@ -17,13 +17,18 @@ void czekaj() {
 void setup() {
     pinMode(LED_BUILTIN, OUTPUT);
     pinMode(2, INPUT);
-
-
+    Serial.begin(9600);
 }
 
 void loop() {
 
     int Klik = digitalRead(2);
+
+    if (Klik == LOW) {
+        
+    
+    
+    Serial.println(Klik);
 
 
     for (int numer = 0; numer < 3; numer++) {
@@ -38,4 +43,6 @@ void loop() {
   Blysk(200);
 }
    
-    czekaj();}
+    czekaj();
+}
+}
